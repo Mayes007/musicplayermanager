@@ -1,9 +1,11 @@
 import { db, storage } from "./firebase.js";
+
 import {
   collection,
   addDoc,
   getDocs
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
 import {
   ref,
   uploadBytes,
@@ -19,13 +21,19 @@ uploadBtn.addEventListener("click", async () => {
   const artist = document.getElementById("artist").value;
   const file = document.getElementById("file").files[0];
 
-  if (!file) return alert("Select a song!");
+  if (!file) {
+    alert("Please select a song file");
+    return;
+  }
 
+  // Upload file to Firebase Storage
   const storageRef = ref(storage, `songs/${file.name}`);
   await uploadBytes(storageRef, file);
 
+  // Get downloadable URL
   const url = await getDownloadURL(storageRef);
 
+  // Save song info to Firestore
   await addDoc(collection(db, "songs"), {
     title,
     artist,

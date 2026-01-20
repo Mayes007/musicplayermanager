@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Music Player Manager</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <h1>🎵 Music Player Manager</h1>
 
-  <input type="text" id="title" placeholder="Song Title" />
-  <input type="text" id="artist" placeholder="Artist" />
-  <input type="file" id="file" accept="audio/*" />
+  <input type="text" id="title" placeholder="Song Title">
+  <input type="text" id="artist" placeholder="Artist">
+  <input type="file" id="file" accept="audio/*">
+
   <button id="uploadBtn">Upload Song</button>
 
+  <h2>Songs</h2>
   <ul id="songList"></ul>
 
   <audio id="player" controls></audio>

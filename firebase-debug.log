@@ -1,0 +1,19 @@
+[debug] [2026-01-20T03:40:05.742Z] ----------------------------------------------------------------------
+[debug] [2026-01-20T03:40:05.748Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Saman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-01-20T03:40:05.749Z] CLI Version:   15.3.1
+[debug] [2026-01-20T03:40:05.749Z] Platform:      win32
+[debug] [2026-01-20T03:40:05.749Z] Node Version:  v22.20.0
+[debug] [2026-01-20T03:40:05.750Z] Time:          Mon Jan 19 2026 20:40:05 GMT-0700 (Mountain Standard Time)
+[debug] [2026-01-20T03:40:05.750Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Saman\Musicplayermanager\musicplayermanager
+
