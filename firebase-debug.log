@@ -17,3 +17,176 @@ You're about to initialize a Firebase project in this directory:
 
   C:\Users\Saman\Musicplayermanager\musicplayermanager
 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-01-20T03:41:51.314Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-20T03:41:51.315Z] > authorizing via signed-in user (samanthatmayes@gmail.com)
+[debug] [2026-01-20T03:41:51.317Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:41:51.317Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:41:51.320Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-01-20T03:41:51.803Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-01-20T03:41:51.803Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2026-01-20T03:42:02.642Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:02.643Z] Checked if tokens are valid: true, expires at: 1768883336421
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2026-01-20T03:42:02.644Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:02.645Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:02.645Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-20T03:42:02.645Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:42:02.647Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com [none]
+[debug] [2026-01-20T03:42:02.647Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:42:03.034Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com 200
+[debug] [2026-01-20T03:42:03.035Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2026-01-20T03:42:03.037Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:03.037Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:03.037Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com:enable [none]
+[debug] [2026-01-20T03:42:03.038Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:42:03.044Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-20T03:42:03.044Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2026-01-20T03:42:03.045Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:03.046Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:03.046Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2026-01-20T03:42:03.046Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com:enable x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:42:03.254Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2026-01-20T03:42:03.254Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2026-01-20T03:42:03.281Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com:enable 200
+[debug] [2026-01-20T03:42:03.281Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2026-01-20T03:42:13.305Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:13.306Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:13.306Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/musicplayermanager1/locations/-/services [none]
+[debug] [2026-01-20T03:42:13.943Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/musicplayermanager1/locations/-/services 200
+[debug] [2026-01-20T03:42:13.943Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/musicplayermanager1/locations/-/services {}
+[debug] [2026-01-20T03:42:18.190Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:18.191Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:18.191Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/musicplayermanager1/billingInfo [none]
+[debug] [2026-01-20T03:42:18.672Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/musicplayermanager1/billingInfo 200
+[debug] [2026-01-20T03:42:18.672Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/musicplayermanager1/billingInfo {"name":"projects/musicplayermanager1/billingInfo","projectId":"musicplayermanager1","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-20T03:42:18.674Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:18.674Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:18.675Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/musicplayermanager1/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2026-01-20T03%3A42%3A18.673Z&interval.startTime=2026-01-13T03%3A42%3A18.673Z
+[debug] [2026-01-20T03:42:20.188Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/musicplayermanager1/timeSeries/ 200
+[debug] [2026-01-20T03:42:20.188Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/musicplayermanager1/timeSeries/ {"unit":"1"}
+[info] +  dataconnect: Detected existing apps music-player-manager (web) 
+[debug] [2026-01-20T03:42:20.217Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:20.217Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:20.218Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/musicplayermanager1/locations/us-east4/services/musicplayermanager/schemas pageSize=100&pageToken=&fields=schemas.name%2Cschemas.datasources%2Cschemas.source
+[debug] [2026-01-20T03:42:20.800Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/musicplayermanager1/locations/us-east4/services/musicplayermanager/schemas 404
+[debug] [2026-01-20T03:42:20.801Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/musicplayermanager1/locations/us-east4/services/musicplayermanager/schemas {"error":{"code":404,"message":"Resource 'services/musicplayermanager' was not found","status":"NOT_FOUND","details":[{"@type":"type.googleapis.com/google.rpc.ResourceInfo","resourceName":"services/musicplayermanager"}]}}
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\seed_data.gql 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] +  Wrote dataconnect\example\queries.gql 
+[info] +  Wrote dataconnect\example\mutations.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] i  dataconnect: Installing the generated SDKs ... 
+[info] i  dataconnect: downloading dataconnect-emulator-3.0.2.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-3.0.2.exe..."}}
+[debug] [2026-01-20T03:42:20.887Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.0.2 
+[debug] [2026-01-20T03:42:21.117Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.0.2 200
+[debug] [2026-01-20T03:42:21.117Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.0.2 [stream]
+[debug] [2026-01-20T03:42:24.872Z] defaultcredentials: writing to file C:\Users\Saman\AppData\Roaming\firebase\samanthatmayes_gmail_com_application_default_credentials.json
+[info] +  dataconnect: Installed generated SDKs for music-player-manager (web) 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2026-01-20T03:42:27.047Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:27.047Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:27.051Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firestore.googleapis.com [none]
+[debug] [2026-01-20T03:42:27.051Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firestore.googleapis.com x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:42:27.332Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firestore.googleapis.com 200
+[debug] [2026-01-20T03:42:27.333Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/firestore.googleapis.com [omitted]
+[info] +  firestore: required API firestore.googleapis.com is enabled 
+[debug] [2026-01-20T03:42:27.337Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:27.337Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:27.337Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases [none]
+[debug] [2026-01-20T03:42:27.792Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases 200
+[debug] [2026-01-20T03:42:27.792Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases {"databases":[{"name":"projects/musicplayermanager1/databases/default","uid":"b5d2927c-4b08-4be0-a69c-682a1c54e904","createTime":"2026-01-16T17:44:52.683592Z","updateTime":"2026-01-16T17:44:52.683592Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"OPTIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2026-01-20T02:42:27.753680Z","appEngineIntegrationMode":"DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"ENTERPRISE","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_MODE_ENABLED","firestoreDataAccessMode":"DATA_ACCESS_MODE_ENABLED","mongodbCompatibleDataAccessMode":"DATA_ACCESS_MODE_DISABLED","etag":"IKfJvcWZmZIDMI2zu8yRmZID"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2026-01-20T03:42:57.752Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:57.752Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:57.753Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/musicplayermanager1/releases pageSize=10&pageToken=
+[debug] [2026-01-20T03:42:58.014Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/musicplayermanager1/releases 200
+[debug] [2026-01-20T03:42:58.014Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/musicplayermanager1/releases {"releases":[{"name":"projects/musicplayermanager1/releases/cloud.firestore/default","rulesetName":"projects/musicplayermanager1/rulesets/26c07181-042c-486a-a655-e1d95f7e5377","createTime":"2026-01-16T17:44:54.733424Z","updateTime":"2026-01-16T17:44:54.733424Z"}]}
+[debug] [2026-01-20T03:42:58.014Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:58.015Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:42:58.015Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/musicplayermanager1/rulesets/26c07181-042c-486a-a655-e1d95f7e5377 [none]
+[debug] [2026-01-20T03:42:58.207Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/musicplayermanager1/rulesets/26c07181-042c-486a-a655-e1d95f7e5377 200
+[debug] [2026-01-20T03:42:58.207Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/musicplayermanager1/rulesets/26c07181-042c-486a-a655-e1d95f7e5377 [omitted]
+[info] i  Downloaded the existing Firestore Security Rules from the Firebase console 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2026-01-20T03:43:00.504Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:00.504Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:00.504Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:00.504Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:00.505Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases/default/collectionGroups/-/indexes [none]
+[debug] [2026-01-20T03:43:00.506Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases/default/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2026-01-20T03:43:00.829Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases/default/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2026-01-20T03:43:00.830Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases/default/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/musicplayermanager1/databases/default/collectionGroups/__default__/fields/*","indexConfig":{}}]}
+[debug] [2026-01-20T03:43:00.832Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases/default/collectionGroups/-/indexes 200
+[debug] [2026-01-20T03:43:00.832Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/musicplayermanager1/databases/default/collectionGroups/-/indexes {}
+[info] i  Downloaded the existing Firestore indexes from the Firebase console 
+[info] +  Wrote firestore.rules 
+[info] +  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2026-01-20T03:43:08.172Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-20T03:43:08.172Z] > authorizing via signed-in user (samanthatmayes@gmail.com)
+[debug] [2026-01-20T03:43:08.172Z] [iam] checking project musicplayermanager1 for permissions ["firebase.projects.get"]
+[debug] [2026-01-20T03:43:08.172Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:08.172Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:08.173Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/musicplayermanager1:testIamPermissions [none]
+[debug] [2026-01-20T03:43:08.173Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/musicplayermanager1:testIamPermissions x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:43:08.173Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/musicplayermanager1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-01-20T03:43:08.556Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/musicplayermanager1:testIamPermissions 200
+[debug] [2026-01-20T03:43:08.556Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/musicplayermanager1:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-01-20T03:43:08.557Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:08.558Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:08.558Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:08.558Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:08.559Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-20T03:43:08.559Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:43:08.561Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/runtimeconfig.googleapis.com [none]
+[debug] [2026-01-20T03:43:08.561Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:43:09.153Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/runtimeconfig.googleapis.com 200
+[debug] [2026-01-20T03:43:09.153Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2026-01-20T03:43:09.168Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-20T03:43:09.168Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-20T03:43:09.168Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:09.168Z] Checked if tokens are valid: true, expires at: 1768883336421
+[debug] [2026-01-20T03:43:09.168Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2026-01-20T03:43:09.168Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/musicplayermanager1
+[debug] [2026-01-20T03:43:09.466Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2026-01-20T03:43:09.466Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/musicplayermanager1/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
